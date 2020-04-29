@@ -1,5 +1,5 @@
 describe('Login to cypress', () => {
-    it('', () => {
+    it('Login check', () => {
       cy.visit('https://www.cypress.io')
       cy.url().should('eq','https://www.cypress.io/')
       cy.wait(1500)
