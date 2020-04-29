@@ -9,8 +9,8 @@ describe('Login to cypress', () => {
       cy.wait(500)
       cy.visit('https://dashboard.cypress.io/login')
       cy.url().should('eq','https://dashboard.cypress.io/login')
-      cy.contains('Log In with GitHub').should('be.visible')
-      cy.contains('Log In with Google').should('be.visible')
+      cy.contains('Log In with GitHub').should('not.visible')
+      cy.contains('Log In with Google').should('not.visible')
 
 
 

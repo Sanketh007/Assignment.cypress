@@ -7,4 +7,5 @@ describe('download cypress', () => {
       cy.wait(1500)
       cy.contains('Download now').click()
     })
-  })
+})
+  

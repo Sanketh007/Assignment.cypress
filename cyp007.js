@@ -8,6 +8,7 @@ describe('Subscribe', () => {
       cy.scrollTo('bottom')
       cy.wait(500)
       cy.get('input[id="email-345a365f-b011-4b67-b50f-a40a5f4f1b12"]').type("a")
-      cy.contains('Subscribe').click()
+      cy.get('.hs-error-msg').scrollIntoView().should('have.text', "Email must be formatted correctly.")
+      //cy.contains('Subscribe').click()
     })
   })

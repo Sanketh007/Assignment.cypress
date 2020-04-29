@@ -9,5 +9,7 @@ describe('Subscribe', () => {
       cy.wait(500)
       cy.get('input[id="email-345a365f-b011-4b67-b50f-a40a5f4f1b12"]').type('sanketh07@gmail.com')
       cy.contains('Subscribe').click()
+      cy.get('.submitted-message').scrollIntoView().should('have.text', "Thanks for submitting the form.")
+      
     })
   })
